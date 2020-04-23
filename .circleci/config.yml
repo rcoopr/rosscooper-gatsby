@@ -20,6 +20,4 @@ workflows:
       - test:
         filters:
           branches:
-            only:
-              - master
-              - develop
+            only: master
