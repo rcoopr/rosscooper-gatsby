@@ -6,6 +6,10 @@
   "author": "Ross Cooper",
   "dependencies": {
     "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.2.1",
+    "@types/react-helmet": "^5.0.15",
+    "@types/testing-library__jest-dom": "^5.0.3",
+    "@types/testing-library__react": "^10.0.1",
     "gatsby": "^2.20.25",
     "gatsby-image": "^2.3.4",
     "gatsby-plugin-manifest": "^2.3.5",
@@ -31,9 +35,13 @@
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "babel-jest": "^25.4.0",
     "babel-preset-gatsby": "^0.3.4",
+    "eslint-config-airbnb": "^18.1.0",
     "eslint-config-airbnb-typescript": "^7.2.1",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
     "gatsby-plugin-root-import": "^2.0.5",
@@ -55,7 +63,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "jest",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx ./"
+    "lint": "tsc --noEmit && eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "repository": {
     "type": "git",
